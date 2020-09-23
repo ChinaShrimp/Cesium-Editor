@@ -13,8 +13,8 @@
   "license": "Apache 2.0",
   "devDependencies": {
     "cesium": "^1.73.0",
-    "codemirror": "^5.13.2",
-    "electron-packager": "^6.0.0",
-    "electron-prebuilt": "^0.37.2"
+    "codemirror": "^5.58.0",
+    "electron": "^10.1.2",
+    "electron-packager": "^15.1.0"
   }
 }
