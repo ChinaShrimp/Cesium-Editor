@@ -5,9 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "./node_modules/.bin/electron .",
-    "build-mac": "./node_modules/.bin/electron-packager . CesiumEditor --platform=darwin --arch=x64 --version=0.37.2 --ignore=README.md --ignore=node_modules/cesium/CesiumUnminified --icon icon.png.icns",
-    "build-win": "./node_modules/.bin/electron-packager . CesiumEditor --platform=win32 --arch=x64 --version=0.37.2 --ignore=README.md --ignore=node_modules/cesium/CesiumUnminified",
-    "build-all": "npm run build-mac && npm run build-win"
+    "pack": "electron-builder --dir",
+    "dist": "npm run dist-win64 && npm run dist-mac",
+    "dist-win64": "electron-builder --win --x64",
+    "dist-mac": "electron-builder --mac"
   },
   "author": "Tom Ped",
   "license": "Apache 2.0",
@@ -15,6 +16,6 @@
     "cesium": "^1.73.0",
     "codemirror": "^5.58.0",
     "electron": "^10.1.2",
-    "electron-packager": "^15.1.0"
+    "electron-builder": "^22.8.1"
   }
 }
