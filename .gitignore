@@ -1,3 +1,5 @@
 /CesiumEditor-darwin-x64
 /CesiumEditor-win32-x64
 /node_modules
+
+dist
