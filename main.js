@@ -1,4 +1,8 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
+const {
+  app,
+  BrowserWindow,
+  ipcMain
+} = require("electron");
 
 var fs = require("fs");
 var path = require("path");
@@ -14,7 +18,7 @@ const createWindow = () => {
     },
   });
 
-  mainWindow.loadFile("index.html");
+  mainWindow.loadFile("./renderer/index.html");
 };
 
 // Electron会在初始化完成并且准备好创建浏览器窗口时调用这个方法

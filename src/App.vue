@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="cesiumContainer"></div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+  mounted: () => {
+    var viewer = new window.Cesium.Viewer("cesiumContainer");
+
+    console.log(viewer);
+  },
+};
 </script>
 
 <style>
@@ -23,6 +23,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
 }
 </style>
