@@ -12,9 +12,11 @@
   },
   "author": "Tom Ped",
   "license": "Apache 2.0",
-  "devDependencies": {
+  "dependencies": {
     "cesium": "^1.73.0",
-    "codemirror": "^5.58.0",
+    "codemirror": "^5.58.0"
+  },
+  "devDependencies": {
     "electron": "^10.1.2",
     "electron-builder": "^22.8.1"
   }
