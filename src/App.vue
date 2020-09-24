@@ -11,7 +11,7 @@ export default {
   mounted: () => {
     var viewer = new window.Cesium.Viewer("cesiumContainer");
 
-    console.log(viewer);
+    viewer;
   },
 };
 </script>
